@@ -1,0 +1,21 @@
+/*
+============================================================================
+green - mustard
+============================================================================
+*/
+
+body, .nav-home a, .scrollNav_1 a {
+	background-color: #195652;
+}
+
+#skills, .nav-skills a, .scrollNav_2 a {
+	background-color: #247e77;
+}
+
+#s-portfolio, .nav-portfolio a, .scrollNav_3 a {
+	background-color: #30a59d;
+}
+
+#s-contact, .nav-contact a, .scrollNav_4 a {
+	background-color: #ddd355;
+}

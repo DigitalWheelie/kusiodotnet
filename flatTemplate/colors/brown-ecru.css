@@ -1,0 +1,21 @@
+/*
+============================================================================
+brown - ecru
+============================================================================
+*/
+
+body, .nav-home a, .scrollNav_1 a {
+	background-color: #261f1a;
+}
+
+#skills, .nav-skills a, .scrollNav_2 a {
+	background-color: #45392f;
+}
+
+#s-portfolio, .nav-portfolio a, .scrollNav_3 a {
+	background-color: #826b58;
+}
+
+#s-contact, .nav-contact a, .scrollNav_4 a {
+	background-color: #ffe2cb;
+}

@@ -1,0 +1,21 @@
+/*
+============================================================================
+brown - orange - yellow
+============================================================================
+*/
+
+body, .nav-home a, .scrollNav_1 a {
+	background-color: #641e00;
+}
+
+#skills, .nav-skills a, .scrollNav_2 a {
+	background-color: #972e00;
+}
+
+#s-portfolio, .nav-portfolio a, .scrollNav_3 a {
+	background-color: #ca3d00;
+}
+
+#s-contact, .nav-contact a, .scrollNav_4 a {
+	background-color: #f3ed7c;
+}

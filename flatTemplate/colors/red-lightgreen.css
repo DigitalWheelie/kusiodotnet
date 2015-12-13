@@ -1,0 +1,21 @@
+/*
+============================================================================
+red - light green
+============================================================================
+*/
+
+body, .nav-home a, .scrollNav_1 a {
+	background-color: #9f2820;
+}
+
+#skills, .nav-skills a, .scrollNav_2 a {
+	background-color: #c93329;
+}
+
+#s-portfolio, .nav-portfolio a, .scrollNav_3 a {
+	background-color: #da544b;
+}
+
+#s-contact, .nav-contact a, .scrollNav_4 a {
+	background-color: #d5da49;
+}

@@ -1,0 +1,21 @@
+/*
+============================================================================
+default color scheme (green)
+============================================================================
+*/
+
+body, .nav-home a, .scrollNav_1 a {
+	background-color: #325041;
+}
+
+#skills, .nav-skills a, .scrollNav_2 a {
+	background-color: #266a50;
+}
+
+#s-portfolio, .nav-portfolio a, .scrollNav_3 a {
+	background-color: #59935c;
+}
+
+#s-contact, .nav-contact a, .scrollNav_4 a {
+	background-color: #e6c904;
+}

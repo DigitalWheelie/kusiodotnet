@@ -1,0 +1,1073 @@
+/*
+Theme Name: Theme name
+Theme URI: URI
+Author: the CSSIgniter team
+Author URI: http://www.cssigniter.com/
+Description: Description goes here
+Version: 1.0
+License: GNU General Public License
+*/
+
+	
+/*
+============================================================================
+Reset (No need to edit anything)
+============================================================================
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+	border:0;
+	font-family:inherit;
+	font-size:100%;
+	font-style:inherit;
+	font-weight:inherit;
+	margin:0;
+	outline:0;
+	padding:0;
+	vertical-align:baseline;
+}
+
+:focus {
+	outline:0;
+}
+
+body {
+	background:#fff;
+	line-height:1;
+}
+
+ol,ul {
+	list-style:none;
+}
+
+table {
+	border-collapse:separate;
+	border-spacing:0;
+}
+
+caption,th,td {
+	font-weight:normal;
+	text-align:left;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+	content:"";
+}
+
+blockquote,q {
+	quotes:;
+}
+
+a img {
+	border:0;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display:block;
+}
+
+.group:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+
+
+	
+/*
+============================================================================
+Global (h1..h6,lists,paragraphs,tables,links,form elements etc)
+============================================================================
+*/
+body,input,textarea {
+	font-weight:normal;
+	line-height:1.4;
+}
+	
+/* Headings */
+h1 {
+	font-size:32px;
+}
+
+h2 {
+	font-size:28px;
+}
+
+h3 {
+	font-size:24px;
+}
+
+h4 {
+	font-size:20px;
+}
+
+h5 {
+	font-size:16px;
+}
+
+h6 {
+	font-size:12px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight:bold;
+	margin-bottom:1em;
+}
+
+hr {
+	background-color:#ccc;
+	border:0;
+	height:1px;
+	margin-bottom:1.625em;
+}
+
+
+	
+/* Text elements */
+p {
+	margin-bottom:1.625em;
+}
+
+ul,ol {
+	margin:0 0 1.625em 2.5em;
+}
+
+ul {
+	list-style:square;
+}
+
+ol {
+	list-style-type:decimal;
+}
+
+ol ol {
+	list-style:upper-alpha;
+}
+
+ol ol ol {
+	list-style:lower-roman;
+}
+
+ol ol ol ol {
+	list-style:lower-alpha;
+}
+
+ul ul,ol ol,ul ol,ol ul {
+	margin-bottom:0;
+}
+
+dl {
+	margin:0 1.625em;
+}
+
+dt {
+	font-weight:bold;
+}
+
+dd {
+	margin-bottom:1.625em;
+}
+
+strong {
+	font-weight:bold;
+}
+
+cite,em,i {
+	font-style:italic;
+}
+
+blockquote {
+	font-family:Georgia, "Bitstream Charter", serif;
+	font-style:italic;
+	font-weight:normal;
+	margin:0 3em;
+}
+
+blockquote em,blockquote i,blockquote cite {
+	font-style:normal;
+}
+
+blockquote cite {
+	color:#666;
+	font:12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	letter-spacing:.05em;
+	text-transform:uppercase;
+}
+
+pre {
+	font:13px "Courier 10 Pitch", Courier, monospace;
+	line-height:1.5;
+	margin-bottom:1.625em;
+	overflow:auto;
+	padding:.75em 1.625em;
+}
+
+code,kbd {
+	font:13px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+abbr,acronym,dfn {
+	cursor:help;
+}
+
+address {
+	display:block;
+	margin:0 0 1.625em;
+}
+
+ins {
+	text-decoration:none;
+}
+
+sup,sub {
+	height:0;
+	line-height:1;
+	position:relative;
+	vertical-align:baseline;
+}
+
+sup {
+	bottom:1ex;
+}
+
+sub {
+	top:.5ex;
+}
+
+
+/* Text links */
+a {
+	text-decoration:none;
+}
+
+a:focus,a:active,a:hover {
+
+}
+
+
+	
+/* Alignment */
+.alignleft {
+	display:inline;
+	float:left;
+	margin-right:1.625em;
+}
+
+.alignright {
+	display:inline;
+	float:right;
+	margin-left:1.625em;
+}
+
+.aligncenter {
+	clear:both;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+	
+/* Make sure embeds and iframes fit their containers */
+embed,iframe,object {
+	max-width:100%;
+}
+
+
+	
+/*
+============================================================================
+Structure (for every page in the theme)
+============================================================================
+*/
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #fff;
+
+	text-shadow: 1px 0 0 rgba(0,0,0,0.7);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Dosis, sans-serif;
+	font-weight: 700;
+	letter-spacing: -0.05em;
+	margin-bottom: 0.5em;
+}
+
+h1 {
+	font-weight: 800;
+	font-size: 5.142857142857143em;
+	text-shadow: 0 7px 0 rgba(0,0,0,0.5);
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 2.142857142857143em;
+	text-shadow: 0 2px 0 rgba(0,0,0,0.5);
+}
+
+h3 {
+	font-weight: 600;
+	font-size: 1.714285714285714em;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+}
+
+.wrap {
+	width: 980px;
+	margin:0 auto;
+}
+
+section .wrap {
+	padding: 130px 0 120px;
+}
+
+.left-col {
+	float: left;
+	width: 30.61224489795918%;
+}
+
+.right-col {
+	float: right;
+	width: 64.28571428571429%;
+}
+
+	
+/*
+============================================================================
+Header (Logo etc)
+============================================================================
+*/
+
+	
+/*
+============================================================================
+Navigation (for every navigational element in the theme)
+============================================================================
+*/
+
+.pageScroll {
+	list-style: none;
+	margin: none;
+	position: fixed;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	z-index: 5000;
+}
+
+.pageScroll li {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.pageScroll li a {
+	width: 58px;
+	height: 58px;
+	display: block;
+	text-indent: -999em;
+	cursor: pointer;
+}
+
+.pageScroll a {
+	background-image: url("images/sprites.png");
+}
+
+.nav-home a,
+.scrollNav_1 a {
+	background-position: 1px 2px;
+}
+
+.nav-skills a,
+.scrollNav_2 a {
+	background-position: 0px -59px;
+}
+
+.nav-portfolio a,
+.scrollNav_3 a {
+	background-position: 1px -122px;
+}
+
+.nav-contact a,
+.scrollNav_4 a {
+	background-position: 0px -435px;
+}
+
+.nav-contact a.active,
+.scrollNav_4.active a {
+	background-position: 0px -188px;
+}
+
+.nav-home a.active,
+.scrollNav_1.active a {
+	background-position: 1px -244px;
+}
+
+.nav-skills a.active,
+.scrollNav_2.active a {
+	background-position: 1px -306px;
+}
+
+.nav-portfolio a.active,
+.scrollNav_3.active a {
+	background-position: 0px -369px;
+}
+
+/*
+============================================================================
+Content
+============================================================================
+*/
+
+/* All Sections */
+
+img {
+	max-width: 100%;
+}
+
+#intro,
+#s-contact,
+#s-portfolio,
+#skills {
+	border-bottom: 10px solid rgba(0,0,0,0.1);
+	border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* 
+	Intro Section
+*/
+
+#intro .wrap {
+	background-image: url("images/bubble.png");
+	background-position: right -60px;
+	background-repeat: no-repeat;
+}
+
+.logo h1 {
+	margin-bottom: 0;
+	line-height: 1.2;
+}
+
+.logo h2 {
+	margin-bottom: 0;
+	line-height: 0.8;
+	font-weight: 400;
+	font-size: 1.714285714285714em;
+}
+
+.logo {
+	padding-bottom: 35px;
+	margin-bottom: 25px;
+	background: transparent url('images/sep1.png') no-repeat left bottom;
+	margin-top: 15px;
+}
+
+.polaroid {
+	width: 315px; height: 353px;
+	background: url('images/sprites.png') no-repeat -87px -8px;
+	margin: 0;
+	margin-left: -15px;
+	position: relative;
+	padding: 25px 0 0 27px;
+}
+
+.polaroid img {
+	border: 1px solid #999;
+}
+
+.polaroid figcaption {
+	color: #000;
+	font-family: "Gochi Hand", Helvetica, Arial, sans-serif;
+	font-size: 1.142857142857143em;
+	text-shadow: none;
+	text-align: center;
+	padding-top: 12px;
+	margin-left: -30px;
+}
+
+/*
+	Resume Section
+*/
+
+#skills .wrap {
+	background: url("images/gear.png") no-repeat right 80px;
+}
+
+.skillset {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-family: Dosis, Helvetica, Arial, sans-serif;
+	font-size: 1.285714285714286em;
+	margin-bottom: 35px;
+}
+
+.skillset:first-of-type {
+	padding-bottom: 35px;
+	margin-bottom: 25px;
+	background: transparent url('images/sep1.png') no-repeat -150px bottom;
+}
+
+.skillname {
+	float: left;
+	text-shadow: none;
+}
+
+.rating {
+	float: right;
+	display:block;
+	margin-top: 5px;
+	width: 128px;
+	background: url("images/trans50.png");
+
+	border-radius: 20px;
+	height: 18px;
+}
+
+.rating b {
+	display: block;
+	height: 16px;
+	border-radius: 20px;
+	background: #97FB2D;
+	border: 1px solid #000;
+	background-image: -o-linear-gradient(left , rgb(227,155,29) 0%, rgb(237,217,36) 25%, rgb(238,245,41) 50%, rgb(174,245,41) 75%, rgb(138,255,48) 100%);
+	background-image: -moz-linear-gradient(left , rgb(227,155,29) 0%, rgb(237,217,36) 25%, rgb(238,245,41) 50%, rgb(174,245,41) 75%, rgb(138,255,48) 100%);
+	background-image: -webkit-linear-gradient(left , rgb(227,155,29) 0%, rgb(237,217,36) 25%, rgb(238,245,41) 50%, rgb(174,245,41) 75%, rgb(138,255,48) 100%);
+	background-image: -ms-linear-gradient(left , rgb(227,155,29) 0%, rgb(237,217,36) 25%, rgb(238,245,41) 50%, rgb(174,245,41) 75%, rgb(138,255,48) 100%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(0, rgb(227,155,29)),
+		color-stop(0.25, rgb(237,217,36)),
+		color-stop(0.5, rgb(238,245,41)),
+		color-stop(0.75, rgb(174,245,41)),
+		color-stop(1, rgb(138,255,48))
+	);
+	background-image: linear-gradient(left , rgb(227,155,29) 0%, rgb(237,217,36) 25%, rgb(238,245,41) 50%, rgb(174,245,41) 75%, rgb(138,255,48) 100%);
+}
+
+
+.employment {
+	margin: 0;
+	padding: 0;
+	list-style-type: disc;
+	list-style-image: url("images/bullet.png");
+	background: url("images/line.png") repeat-y left;
+}
+
+.employment li {
+	padding-bottom: 20px;
+	margin-bottom: 25px;
+	background: transparent url('images/sep1.png') no-repeat 35px bottom;
+	padding-left: 35px;
+	margin-left: 13px;
+}
+
+.e-title {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.e-title .period {
+	position: absolute;
+	right: 0;
+	top: 5px;
+
+	padding: 5px 20px;
+	background: url("images/trans10.png");
+
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+
+	font-family: Dosis;
+}
+
+.e-title h3 {
+	margin-bottom: 0;
+	max-width: 78%;
+}
+
+.e-title h4 {
+	font-size: 1.285714285714286em;
+	font-weight: 400;
+}
+
+/*
+	Portfolio Section
+*/
+
+#s-portfolio .wrap {
+	background: url("images/suitcase.png") no-repeat right 60px;
+}
+
+.portfolio-nav {
+	list-style: none;
+	margin: 0 0 35px 0;
+	padding: 0;
+}
+
+.portfolio-nav li {
+	float: left;
+	margin-right: 15px;
+}
+
+.portfolio-nav a,
+.portfolio-nav a:active,
+.portfolio-nav a:visited {
+	color: #fff;
+	font-family: Dosis, Helvetica, Arial, sans-serif;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+	font-weight: 600;
+	padding: 4px 25px;
+
+	background: url("images/trans10.png");
+
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+}
+
+.portfolio-nav a:hover,
+.portfolio-nav a.selected {
+	text-decoration: none;
+	background: url("images/trans30.png");
+}
+
+.portfolio-items {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 107%;
+}
+
+.portfolio-items li {
+	float: left;
+	width: 28.21224489795918%;
+	height: 225px;
+	margin-right: 4.08163265306122%;
+	text-align: center;
+	margin-bottom: 40px;
+	background: url("images/trans20.png");
+	padding: 10px 0;
+	border: 1px solid rgba(255,255,255,0.22);
+
+	-moz-box-shadow: 0 0 0 3px rgba(0,0,0,0.02) inset;
+	-webkit-box-shadow: 0 0 0 3px rgba(0,0,0,0.02) inset;
+	box-shadow: 0 0 0 3px rgba(0,0,0,0.02) inset;
+
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.portfolio-items a {
+	font-family: Dosis, Helvetica, Arial, sans-serif;
+	color: #fff;
+	font-size: 1.285714285714286em;
+}
+
+.portfolio-items a:hover {
+	text-decoration: none;
+	color: #f3f3f3;
+}
+
+/*
+	Contact Section
+*/
+
+#s-contact .wrap {
+	background: url("images/envelope.png") no-repeat right 60px;
+}
+
+.light {
+	color: #373737;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.6);
+}
+
+.light h1 {
+	text-shadow: 0 7px 0 #fff;
+}
+
+.light h2 {
+	text-shadow: 0 2px 0 #fff;
+}
+
+.light h3 {
+	text-shadow: 0 1px 0 #fff;
+}
+
+.address-info {
+	list-style: none;
+	margin: 0 0 25px 0;
+	padding: 0;
+}
+
+.map {
+	padding: 10px;
+	border: 1px solid rgba(255,255,255,0.5);
+
+	-moz-box-shadow: 0 0 0 1px rgba(0,0,0,0.05) inset;
+	-webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.05) inset;
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.05) inset;
+
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background: url("images/trans50.png");
+}
+	
+
+
+/* Form elements */
+label {
+	display: block;
+	margin-bottom: 7px;
+}
+
+input[type=text],input[type=password],textarea {
+	padding: 10px;
+	border: 1px solid rgba(255,255,255,0.5);
+
+	-moz-box-shadow: 0 0 0 1px rgba(0,0,0,0.05) inset;
+	-webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.05) inset;
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.05) inset;
+
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font:inherit;
+	background: url("images/trans30.png");
+}
+
+input[type=text] {
+	width: 50%;
+}
+
+textarea {
+	width: 98%;
+}
+
+input[type=text]:focus,textarea:focus {
+	background: url("images/trans20.png");
+}
+
+input[type=submit], button[type=submit] {
+	padding: 7px 25px;
+	border: 1px solid rgba(255,255,255,0.5);
+
+	-moz-box-shadow: 0 0 0 1px rgba(0,0,0,0.05) inset;
+	-webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.05) inset;
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.05) inset;
+
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font-family: Dosis, Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 1.2em;
+	color: #fff;
+	background: url("images/trans50.png");
+	text-shadow: 0 2px 0 rgba(0,0,0,0.9);
+	cursor: pointer;
+}
+
+input[type=submit]:active,
+button[type=submit]:active {
+	position: relative;
+	top: 1px;
+}
+
+/*
+============================================================================
+Comments (everything related to the comments section)
+============================================================================
+*/
+
+	
+/*
+============================================================================
+Footer
+============================================================================
+*/
+
+	
+/*
+============================================================================
+Widgets 
+============================================================================
+*/
+.widget-area {
+}
+
+.widget {
+}
+
+.widget-title {
+}
+
+.widget ul {
+	margin:0;
+}
+
+.widget ul ul {
+	margin-left:1.5em;
+}
+
+.widget ul li {
+	font-size:13px;
+}
+
+.widget a {
+}
+
+.widget a:hover,.widget a:focus,.widget a:active {
+}
+
+
+	
+/* Search Widget */
+.widget_search form {
+}
+
+.widget_search #s {
+}
+
+.widget_search #searchsubmit {
+	position:relative;
+	top:-2px;
+}
+
+.widget_search #searchsubmit:active {
+}
+
+
+	
+/* Ephemera Widget */
+section.ephemera ol,.widget_twentyeleven_ephemera ol {
+	list-style:square;
+	margin:5px 0 0;
+}
+
+.widget_twentyeleven_ephemera .widget-entry-title {
+	padding:0;
+}
+
+.widget_twentyeleven_ephemera .comments-link a,.widget_twentyeleven_ephemera .comments-link > span {
+	display:block;
+	font-weight:bold;
+}
+
+section.ephemera .entry-title .comments-link a:hover,.widget_twentyeleven_ephemera .entry-title .comments-link a:hover {
+}
+
+section.ephemera .entry-title a span {
+}
+
+
+	
+/* Widget Image */
+.widget_image img {
+	height:auto;
+	max-width:100%;
+}
+
+/* Flickr Widget */
+
+.flickr_badge_image {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.flickr_badge_image:nth-child(3n) {
+	margin-right: 0;
+}
+
+
+	
+/* Calendar Widget */
+.widget_calendar #wp-calendar {
+	width:95%;
+	text-align:center;
+}
+
+.widget_calendar #wp-calendar caption,.widget_calendar #wp-calendar td,.widget_calendar #wp-calendar th {
+	text-align:center;
+}
+
+.widget_calendar #wp-calendar caption {
+	font-size:11px;
+	padding:5px 0 3px;
+	text-transform:uppercase;
+}
+
+.widget_calendar #wp-calendar th {
+	font-weight:bold;
+}
+
+.widget_calendar #wp-calendar tfoot td {
+}
+
+
+	
+/*
+============================================================================
+Template Name: (E.g. Homepage - Styles that apply only here
+============================================================================
+*/
+
+
+
+/*
+============================================================================
+Various
+============================================================================
+*/
+
+/**** Isotope filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+
+/*
+============================================================================
+Media Queries 
+============================================================================
+*/
+
+/* Tablet Portrait */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.wrap {
+		width: 768px;
+	}
+
+	#intro .right-col {
+		width: 54.285714%;
+	}
+
+
+	.portfolio-items li {
+		height: 195px;
+	}
+
+}
+
+
+/* Mobile Portrait --320px-- */
+
+@media only screen and (max-width: 767px) {
+	.wrap {
+		width: 320px;
+		
+	}
+
+	.left-col {
+		float: none;
+		margin-bottom: 30px;
+		width: 100%;
+	}
+
+	.right-col {
+		float: none;
+		width: 100%;
+	}
+
+	.polaroid {
+		margin: 0 auto;
+	}
+
+	.logo {
+		text-align: center;
+	}
+
+	.logo h1 {
+		line-height: 0.8;
+		margin-bottom: 20px;
+	}
+
+	#navigation {
+		text-align: center;
+	}
+
+	.employment .period {
+		position: static;
+		margin: 5px 0;
+	}
+
+	.portfolio-nav li {
+		margin-bottom: 15px;
+		float: none;
+		text-align: center;
+	}
+
+	section .wrap {
+		background-image: none !important;
+	}
+
+	.portfolio-items {
+		width: 100%;
+	}
+
+	.portfolio-items li {
+		float: none;
+		margin-right: 0;
+		width: 100%;
+		margin-bottom: 30px;
+		display: block;
+		height: 270px;
+	}
+
+	.portfolio-items img {
+		min-width: 95%;
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 10px;
+	}
+}
+
+/* Mobile Landscape --480px-- */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.wrap {
+		width: 480px;
+	}
+
+	.portfolio-items li {
+
+		height:  380px !important;
+	}
+
+}

@@ -1,0 +1,21 @@
+/*
+============================================================================
+hot pink - yellow
+============================================================================
+*/
+
+body, .nav-home a, .scrollNav_1 a {
+	background-color: #bc0048;
+}
+
+#skills, .nav-skills a, .scrollNav_2 a {
+	background-color: #ef005b;
+}
+
+#s-portfolio, .nav-portfolio a, .scrollNav_3 a {
+	background-color: #ff2377;
+}
+
+#s-contact, .nav-contact a, .scrollNav_4 a {
+	background-color: #ffda0b;
+}
